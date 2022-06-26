@@ -63,7 +63,7 @@ class GuessTheWordGame {
 	}
 	endGame() {
 		if (this.correct.length === this.word.length) {
-			alert(`Congrats! You found the word ${word.toUpperCase()}`);
+			alert(`Congrats! You found the word ${this.word.toUpperCase()}`);
 			init();
 		} else if (this.maxGuess < 1) {
 			alert("Game over! You don't have remaining guess");
