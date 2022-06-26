@@ -64,7 +64,7 @@ class GuessTheWordGame {
 	endGame() {
 		if (this.correct.length === this.word.length) {
 			alert(`Congrats! You found the word ${this.word.toUpperCase()}`);
-			init();
+			this.init();
 		} else if (this.maxGuess < 1) {
 			alert("Game over! You don't have remaining guess");
 			for (let i = 0; i < this.word.length; i++) {
